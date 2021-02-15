@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/sierraxrose/bac-calculator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAC Calculator</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!--Title For The Page -->
+<h2>BAC Calculator</h2>
 
-### Markdown
+<!--Text Boxes For Amount Of Alcohol Consumed -->
+<form id="form1">
+    <fieldset>
+        <legend>Drinks Consumed</legend>
+        <label for="beer">Number of Beers Consumed</label>
+            <input type="number" id="beer" name="beer" value="0" required>
+        <br>
+        <br>
+        <label for="wine">Glasses of Wine Consumed</label>
+            <input type="number" id="wine" name="wine" value="0" required>
+        <br>
+        <br>
+        <label for="shot">Number of Shots Consumed</label>
+            <input type="number" id="shot" name="shot" value="0" required>
+        <br>
+        <br>
+    </fieldset>
+</form>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<!-- Text Boxes To Determine Weight & Hours Since 1st Drink -->
+<form id="form2">
+    <fieldset>
+        <legend>Your Weight & Time Passed</legend>
+        <label for="weight">Your Weight In Pounds</label>
+            <input type="number" id="weight" name="weight" value="0" required>
+        <br>
+        <br>
+        <label for="hours">Hours Since Your First Drink</label>
+            <input type="number" id="hours" name="hours" value="0" required>
 
-```markdown
-Syntax highlighted code block
+    </fieldset>
+</form>
 
-# Header 1
-## Header 2
-### Header 3
+<br>
+<br>
+<!-- Button To Collect & Show Data -->
 
-- Bulleted
-- List
+<input type="submit" id="submit" name="submit" value="Calculate My BAC">
 
-1. Numbered
-2. List
+<br>
 
-**Bold** and _Italic_ and `Code` text
+<p id="result"></p>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sierraxrose/bac-calculator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
